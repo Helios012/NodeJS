@@ -3,6 +3,7 @@ import java.sql.*;
 public class UpdateExample {
     public static void main(String[] args) {
         try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/company", "root", "root");
             Statement stmt = conn.createStatement();
