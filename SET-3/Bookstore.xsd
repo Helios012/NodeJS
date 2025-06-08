@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.eswar.com"
+xmlns="http://www.eswar.com"
+elementFormDefault="qualified">
+<xs:element name="emp">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="title" type="xs:string"/>
+<xs:element name="author" type="xs:string"/>
+<xs:element name="date" type="xs:decimal" />
+<xs:element name="publisher" type="xs:string" fixed="IT"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+    <xsd:complexType name="book_type">
+         <xsd:sequence>
+             <xsd:element name="title" type="xsd:string"/>
+             <xsd:element name="author" type="xsd:string"/>
+             <xsd:element name="date" minOccurs="0" type="xsd:string"/>
+             <xsd:element name="publisher" type="xsd:string"/>
+         </xsd:sequence>
+         <xsd:attribute name="ISBN" type="xsd:string"/>
+     </xsd:complexType>
+</xsd:schema>
