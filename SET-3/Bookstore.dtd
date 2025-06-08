@@ -1,0 +1,9 @@
+<!ELEMENT book_store (book+)>
+<!ATTLIST book_store xmlns CDATA #IMPLIED>
+<!ELEMENT book (title, author, date?, publisher)>
+<!ATTLIST book ISBN CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
