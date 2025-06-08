@@ -3,9 +3,9 @@ public class InsertExample {
     public static void main(String[] args) {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/company","root","Adithya!24");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/company","root","root");
             Statement stmt=con.createStatement();
-            String s="insert into employees values(102,'Jashu','CSE')";
+            String s="insert into employees values(102,'Drake','CSE')";
             int row=stmt.executeUpdate(s);
             System.out.println(row + " row(s) inserted.");
             con.close();
